@@ -9,7 +9,7 @@
 {
     <h2>We don't have any movies yet.</h2>
 }
- else
+else
 {
     <table class="table table-bordered table-hover">
         <thead>
@@ -21,11 +21,11 @@
             @foreach (var movie in Model)
             {
                 <tr>
-                    <td><a href="@Url.Action("Details", "Movies", new { id = movie.Id })">@movie.Name</a></td>
+                    <td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
+                    <td>@movie.Genre.Name</td>
                 </tr>
             }
         </tbody>
     </table>
 }
-
 

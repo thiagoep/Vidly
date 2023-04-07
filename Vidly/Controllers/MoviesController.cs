@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,49 +11,32 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        public List<Movie> movies = new List<Movie>
-            {
-                new Movie { Id = 1, Name = "Shrek" },
-                new Movie { Id = 2, Name = "SpongeBob" }
-            };
+        private ApplicationDbContext _context;
 
-        public List<Customer> customers = new List<Customer>
-            {
-                new Customer { Name = "Thiago" },
-                new Customer { Name = "Exequiel" }
-            };
-        // GET: Movies/Random
-        public ActionResult Random()
+        public MoviesController()
         {
-            var movie = new Movie() { Name = "Shrek!" };
-
-
-            var viewModel = new RandomMovieViewModel
-            {
-                Movie = movie,
-                Customers = customers
-            };
-
-            return View(viewModel);
-
+            _context = new ApplicationDbContext();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
         }
 
-        [Route("movies")]
-        public ActionResult Movies()
+        public ViewResult Index()
         {
+            var movies = _context.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
         }
 
-        [Route("movies/details/{id}")]
         public ActionResult Details(int id)
         {
-            Movie movie = movies.Find(x => x.Id == id);
+            var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
 
-            if(movie == null)
+            if (movie == null)
             {
                 return HttpNotFound();
-            } 
+            }
             else
             {
                 return View(movie);

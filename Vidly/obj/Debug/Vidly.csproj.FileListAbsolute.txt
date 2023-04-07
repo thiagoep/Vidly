@@ -106,3 +106,14 @@ C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs
 C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSuscribedToCustomer.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddNameInMembershipType.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SetNameMembershipTypes.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDateTimeToCustomer.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreateGenreEntityAndAddToMovie.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenres.resources
