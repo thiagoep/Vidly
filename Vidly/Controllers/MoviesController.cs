@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -44,6 +45,7 @@ namespace Vidly.Controllers
             {
                 var movieInDb = _context.Movies.Single(c => c.Id == movie.Id);
 
+                movieInDb.Name = movie.Name;
                 movieInDb.GenreId = movie.GenreId;
                 movieInDb.Added = movie.Added;
                 movieInDb.NumberInStock = movie.NumberInStock;
