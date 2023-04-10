@@ -15,17 +15,21 @@ else
 
 @using (@Html.BeginForm("Save", "Customer"))
 {
+    @Html.ValidationSummary(true, "Please fix the following errors.")
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.Name)
         @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Customer.DateTime)
-        @Html.TextBoxFor(m => m.Customer.DateTime, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.Name)
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.MembershipTypeId)
         @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes, "Id", "Name"), new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.MembershipTypeId)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.DateTime)
+        @Html.TextBoxFor(m => m.Customer.DateTime, "{0:d MMM yyyy}", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.DateTime)
     </div>
     <div class="checkbox">
         <label>
@@ -33,5 +37,13 @@ else
         </label>
     </div>
     @Html.HiddenFor(m => m.Customer.Id)
+    @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save</button>
 }
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<!--solo sirve para anotaciones de datos standard, en caso de crear una nueva habría que crear la jquery-->
