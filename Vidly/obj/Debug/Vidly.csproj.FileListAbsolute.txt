@@ -117,3 +117,11 @@ C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SetNameMember
 C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDateTimeToCustomer.resources
 C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreateGenreEntityAndAddToMovie.resources
 C:\Users\thiag\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenres.resources
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\thiag\source\repos\Vidly\Vidly\bin\AutoMapper.xml
